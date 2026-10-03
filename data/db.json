@@ -1,0 +1,1437 @@
+{
+  "contacts": [
+    {
+      "id": "1790164552563",
+      "phone": "8660013411",
+      "name": "CV",
+      "company": "wenu",
+      "email": "",
+      "tags": "Lead",
+      "created_at": "2026-09-23T11:55:52.563Z"
+    },
+    {
+      "id": "1790165231677",
+      "phone": "8310031349",
+      "name": "vjb",
+      "company": "wenu",
+      "email": "",
+      "tags": "VIP",
+      "created_at": "2026-09-23T12:07:11.677Z"
+    },
+    {
+      "id": "1790165259064",
+      "phone": "7204708625",
+      "name": "Bhuchi",
+      "company": "wenu",
+      "email": "",
+      "tags": "VIP",
+      "created_at": "2026-09-23T12:07:39.064Z"
+    },
+    {
+      "id": "1790165297586",
+      "phone": "6366189346",
+      "name": "Cha",
+      "company": "wenu",
+      "email": "",
+      "tags": "VIP",
+      "created_at": "2026-09-23T12:08:17.586Z"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "cmp_1790167545256",
+      "title": "Welcome Greeting",
+      "message_template": "hi name,\nwe are from We and You Marketing company",
+      "delay_min": 3000,
+      "delay_max": 7000,
+      "status": "completed",
+      "total_contacts": 4,
+      "sent_count": 4,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        },
+        {
+          "id": "1790165231677",
+          "phone": "8310031349",
+          "name": "vjb",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:11.677Z"
+        },
+        {
+          "id": "1790165259064",
+          "phone": "7204708625",
+          "name": "Bhuchi",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:39.064Z"
+        },
+        {
+          "id": "1790165297586",
+          "phone": "6366189346",
+          "name": "Cha",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:08:17.586Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:45:45.256Z"
+    },
+    {
+      "id": "cmp_1790167446536",
+      "title": "Welcome Greeting",
+      "message_template": "hi name,\nwe are from We and You Marketing company",
+      "delay_min": 3000,
+      "delay_max": 7000,
+      "status": "completed",
+      "total_contacts": 1,
+      "sent_count": 1,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:44:06.536Z"
+    },
+    {
+      "id": "cmp_1790167091284",
+      "title": "Broadcast Campaigns.",
+      "message_template": "hi {name},\nwe are from We and You Marketing company\n",
+      "delay_min": 3000,
+      "delay_max": 7000,
+      "status": "completed",
+      "total_contacts": 1,
+      "sent_count": 1,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:38:11.284Z"
+    },
+    {
+      "id": "cmp_1790166734581",
+      "title": "Broadcast Campaigns.",
+      "message_template": "hi {name},\nwe are from We and You Marketing company\n",
+      "delay_min": 1000,
+      "delay_max": 3000,
+      "status": "completed",
+      "total_contacts": 4,
+      "sent_count": 4,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        },
+        {
+          "id": "1790165231677",
+          "phone": "8310031349",
+          "name": "vjb",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:11.677Z"
+        },
+        {
+          "id": "1790165259064",
+          "phone": "7204708625",
+          "name": "Bhuchi",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:39.064Z"
+        },
+        {
+          "id": "1790165297586",
+          "phone": "6366189346",
+          "name": "Cha",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:08:17.586Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:32:14.581Z"
+    },
+    {
+      "id": "cmp_1790165739059",
+      "title": "Marketing Intro",
+      "message_template": "hi {name},\nwe are from We and You Marketing company\n",
+      "delay_min": 1000,
+      "delay_max": 3000,
+      "status": "completed",
+      "total_contacts": 4,
+      "sent_count": 4,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        },
+        {
+          "id": "1790165231677",
+          "phone": "8310031349",
+          "name": "vjb",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:11.677Z"
+        },
+        {
+          "id": "1790165259064",
+          "phone": "7204708625",
+          "name": "Bhuchi",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:39.064Z"
+        },
+        {
+          "id": "1790165297586",
+          "phone": "6366189346",
+          "name": "Cha",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:08:17.586Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:15:39.059Z"
+    },
+    {
+      "id": "cmp_1790165373913",
+      "title": "Marketing Intro",
+      "message_template": "hi {name},\nwe are from We and You Marketing company\n",
+      "delay_min": 3000,
+      "delay_max": 7000,
+      "status": "completed",
+      "total_contacts": 4,
+      "sent_count": 4,
+      "failed_count": 0,
+      "contacts": [
+        {
+          "id": "1790164552563",
+          "phone": "8660013411",
+          "name": "CV",
+          "company": "wenu",
+          "email": "",
+          "tags": "Lead",
+          "created_at": "2026-09-23T11:55:52.563Z"
+        },
+        {
+          "id": "1790165231677",
+          "phone": "8310031349",
+          "name": "vjb",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:11.677Z"
+        },
+        {
+          "id": "1790165259064",
+          "phone": "7204708625",
+          "name": "Bhuchi",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:07:39.064Z"
+        },
+        {
+          "id": "1790165297586",
+          "phone": "6366189346",
+          "name": "Cha",
+          "company": "wenu",
+          "email": "",
+          "tags": "VIP",
+          "created_at": "2026-09-23T12:08:17.586Z"
+        }
+      ],
+      "created_at": "2026-09-23T12:09:33.913Z"
+    }
+  ],
+  "auto_responders": [
+    {
+      "id": 1,
+      "keyword": "hello",
+      "match_type": "contains",
+      "response_text": "Hi there! 👋 Welcome to our business support on WhatsApp. How can we help you today?\n\n1. Product Catalog\n2. Pricing Details\n3. Talk to Support",
+      "is_active": 0,
+      "created_at": "2026-09-23T11:38:53.604Z"
+    },
+    {
+      "id": 2,
+      "keyword": "price",
+      "match_type": "contains",
+      "response_text": "Our pricing plans start from $19/mo. Visit our website or reply with \"1\" to request a callback from sales!",
+      "is_active": 1,
+      "created_at": "2026-09-23T11:38:53.605Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": 1,
+      "name": "Welcome Greeting",
+      "content": "{Hi|Hello|Hey} {name}, thank you for contacting {company}! We have received your query and will reply shortly.",
+      "category": "General",
+      "created_at": "2026-09-23T11:38:53.605Z"
+    },
+    {
+      "id": 2,
+      "name": "Order Confirmation",
+      "content": "Hi {name}, your order #{order_id} has been confirmed and is being processed. Thank you for shopping with us!",
+      "category": "Sales",
+      "created_at": "2026-09-23T11:38:53.605Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1790356440853_197",
+      "recipient": "29227353145358@lid",
+      "message": "I need to ask something",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:14:00.853Z"
+    },
+    {
+      "id": "log_1790356048515_827",
+      "recipient": "29227353145358@lid",
+      "message": "Doing",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:07:28.515Z"
+    },
+    {
+      "id": "log_1790356045743_370",
+      "recipient": "29227353145358@lid",
+      "message": "Hu ade",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:07:25.743Z"
+    },
+    {
+      "id": "log_1790355974276_368",
+      "recipient": "29227353145358@lid",
+      "message": "3rd means",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:06:14.276Z"
+    },
+    {
+      "id": "log_1790355956614_975",
+      "recipient": "29227353145358@lid",
+      "message": "2 varegu edirthini don't worry",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:56.614Z"
+    },
+    {
+      "id": "log_1790355939835_196",
+      "recipient": "29227353145358@lid",
+      "message": "One hour time waste yen agalla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:39.835Z"
+    },
+    {
+      "id": "log_1790355932419_6",
+      "recipient": "29227353145358@lid",
+      "message": "Nanu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:32.419Z"
+    },
+    {
+      "id": "log_1790355930294_385",
+      "recipient": "29227353145358@lid",
+      "message": "Odthini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:30.294Z"
+    },
+    {
+      "id": "log_1790355927580_368",
+      "recipient": "29227353145358@lid",
+      "message": "Two day's time ide",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:27.580Z"
+    },
+    {
+      "id": "log_1790355917382_371",
+      "recipient": "29227353145358@lid",
+      "message": "What",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:05:17.382Z"
+    },
+    {
+      "id": "log_1790355895849_688",
+      "recipient": "29227353145358@lid",
+      "message": "Malkobekadre madu nine",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:04:55.849Z"
+    },
+    {
+      "id": "log_1790355885113_921",
+      "recipient": "29227353145358@lid",
+      "message": "Hu madthini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:04:45.113Z"
+    },
+    {
+      "id": "log_1790355880193_759",
+      "recipient": "29227353145358@lid",
+      "message": "Movie odidh saku nale time ide alla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:04:40.193Z"
+    },
+    {
+      "id": "log_1790355861162_734",
+      "recipient": "29227353145358@lid",
+      "message": "Edirthiya",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T17:04:21.162Z"
+    },
+    {
+      "id": "log_1790354592500_957",
+      "recipient": "29227353145358@lid",
+      "message": "Reading",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:43:12.500Z"
+    },
+    {
+      "id": "log_1790354590741_736",
+      "recipient": "29227353145358@lid",
+      "message": "Half an hour",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:43:10.741Z"
+    },
+    {
+      "id": "log_1790354581281_403",
+      "recipient": "29227353145358@lid",
+      "message": "Amele",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:43:01.281Z"
+    },
+    {
+      "id": "log_1790354578821_900",
+      "recipient": "29227353145358@lid",
+      "message": "Wait",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:58.821Z"
+    },
+    {
+      "id": "log_1790354576682_626",
+      "recipient": "29227353145358@lid",
+      "message": "Madthini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:56.682Z"
+    },
+    {
+      "id": "log_1790354538971_113",
+      "recipient": "29227353145358@lid",
+      "message": "Online nalli ninge yen kelsa??",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:18.971Z"
+    },
+    {
+      "id": "log_1790354528322_649",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:08.322Z"
+    },
+    {
+      "id": "log_1790354524919_129",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:04.919Z"
+    },
+    {
+      "id": "log_1790354523343_877",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:03.343Z"
+    },
+    {
+      "id": "log_1790354521339_451",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:42:01.339Z"
+    },
+    {
+      "id": "log_1790354518663_104",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:41:58.663Z"
+    },
+    {
+      "id": "log_1790354510824_309",
+      "recipient": "29227353145358@lid",
+      "message": "Glo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:41:50.824Z"
+    },
+    {
+      "id": "log_1790354509153_705",
+      "recipient": "29227353145358@lid",
+      "message": "Blo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:41:49.153Z"
+    },
+    {
+      "id": "log_1790354507506_381",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:41:47.506Z"
+    },
+    {
+      "id": "log_1790354505308_990",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:41:45.308Z"
+    },
+    {
+      "id": "log_1790354400056_523",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:40:00.056Z"
+    },
+    {
+      "id": "log_1790354398496_301",
+      "recipient": "29227353145358@lid",
+      "message": "Hlo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T16:39:58.496Z"
+    },
+    {
+      "id": "log_1790348429574_30",
+      "recipient": "132259424251933@lid",
+      "message": "Hu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T15:00:29.574Z"
+    },
+    {
+      "id": "log_1790347878770_213",
+      "recipient": "132259424251933@lid",
+      "message": "Terminal through clone madbko",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:51:18.770Z"
+    },
+    {
+      "id": "log_1790347812993_939",
+      "recipient": "132259424251933@lid",
+      "message": "Andre direct clone uhh!",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:50:12.993Z"
+    },
+    {
+      "id": "log_1790347770841_80",
+      "recipient": "132259424251933@lid",
+      "message": "Hu sigt alla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:49:30.841Z"
+    },
+    {
+      "id": "log_1790347748767_647",
+      "recipient": "132259424251933@lid",
+      "message": "Ok",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:49:08.767Z"
+    },
+    {
+      "id": "log_1790347718427_911",
+      "recipient": "132259424251933@lid",
+      "message": "Yavdu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:48:38.427Z"
+    },
+    {
+      "id": "log_1790346506343_829",
+      "recipient": "33062691803183@lid",
+      "message": "https://github.com/VaibhavJB14/Attendance-management/invitations",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:28:26.343Z"
+    },
+    {
+      "id": "log_1790345628216_688",
+      "recipient": "33062691803183@lid",
+      "message": "https://github.com/VaibhavJB14/Attendance-management",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T14:13:48.216Z"
+    },
+    {
+      "id": "log_1790343574567_359",
+      "recipient": "132259424251933@lid",
+      "message": "I'm outside",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:39:34.567Z"
+    },
+    {
+      "id": "log_1790343571517_318",
+      "recipient": "132259424251933@lid",
+      "message": "Ega haa?",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:39:31.517Z"
+    },
+    {
+      "id": "log_1790343248372_307",
+      "recipient": "29227353145358@lid",
+      "message": "Polar bear",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:34:08.372Z"
+    },
+    {
+      "id": "log_1790343174940_442",
+      "recipient": "29227353145358@lid",
+      "message": "Nodu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:32:54.940Z"
+    },
+    {
+      "id": "log_1790343172727_837",
+      "recipient": "29227353145358@lid",
+      "message": "Order madu andre",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:32:52.727Z"
+    },
+    {
+      "id": "log_1790343154562_347",
+      "recipient": "29227353145358@lid",
+      "message": "Eating illa",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:32:34.562Z"
+    },
+    {
+      "id": "log_1790343090873_19",
+      "recipient": "263011650519175@lid",
+      "message": "https://meet.google.com/roi-bqqm-mjk",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:31:30.873Z"
+    },
+    {
+      "id": "log_1790343089682_871",
+      "recipient": "29227353145358@lid",
+      "message": "Dalo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:31:29.682Z"
+    },
+    {
+      "id": "log_1790343087384_295",
+      "recipient": "29227353145358@lid",
+      "message": "400",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:31:27.384Z"
+    },
+    {
+      "id": "log_1790342382467_628",
+      "recipient": "29227353145358@lid",
+      "message": "Beda bidu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:19:42.467Z"
+    },
+    {
+      "id": "log_1790342378946_499",
+      "recipient": "29227353145358@lid",
+      "message": "Y",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:19:38.946Z"
+    },
+    {
+      "id": "log_1790342346311_379",
+      "recipient": "29227353145358@lid",
+      "message": "Y",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:19:06.311Z"
+    },
+    {
+      "id": "log_1790342317506_187",
+      "recipient": "29227353145358@lid",
+      "message": "Illa nine order madbeku",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:18:37.506Z"
+    },
+    {
+      "id": "log_1790342302144_109",
+      "recipient": "29227353145358@lid",
+      "message": "Y",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:18:22.144Z"
+    },
+    {
+      "id": "log_1790342281591_308",
+      "recipient": "29227353145358@lid",
+      "message": "Next October nalle",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:18:01.591Z"
+    },
+    {
+      "id": "log_1790342261466_455",
+      "recipient": "29227353145358@lid",
+      "message": "Please",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:17:41.466Z"
+    },
+    {
+      "id": "log_1790342259177_244",
+      "recipient": "29227353145358@lid",
+      "message": "Kanda",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:17:39.177Z"
+    },
+    {
+      "id": "log_1790342257010_724",
+      "recipient": "29227353145358@lid",
+      "message": "Order",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:17:37.010Z"
+    },
+    {
+      "id": "log_1790342236247_428",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T13:17:16.247Z"
+    },
+    {
+      "id": "log_1790340705252_85",
+      "recipient": "29227353145358@lid",
+      "message": "Amele heltini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:51:45.252Z"
+    },
+    {
+      "id": "log_1790340699357_348",
+      "recipient": "29227353145358@lid",
+      "message": "Cl nalli",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:51:39.357Z"
+    },
+    {
+      "id": "log_1790339987049_918",
+      "recipient": "status@broadcast",
+      "message": "❤️",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:39:47.049Z"
+    },
+    {
+      "id": "log_1790339812080_361",
+      "recipient": "29227353145358@lid",
+      "message": "Yeno helbeku",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:36:52.080Z"
+    },
+    {
+      "id": "log_1790339773343_670",
+      "recipient": "29227353145358@lid",
+      "message": "🥰😘",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:36:13.343Z"
+    },
+    {
+      "id": "log_1790339721416_649",
+      "recipient": "29227353145358@lid",
+      "message": "Kalu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:35:21.416Z"
+    },
+    {
+      "id": "log_1790339519149_240",
+      "recipient": "29227353145358@lid",
+      "message": "Gm",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:31:59.149Z"
+    },
+    {
+      "id": "log_1790338137794_207",
+      "recipient": "status@broadcast",
+      "message": "https://www.instagram.com/reel/DdtZsUzT0rp/?stkn=bWFybnU1OTJyeDRw",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-25T12:08:57.794Z"
+    },
+    {
+      "id": "log_1790177709348_178",
+      "recipient": "154743494193290@lid",
+      "message": "We are currently offline. Our business hours are Mon-Fri 9AM-6PM. We will reply first thing tomorrow!",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T15:35:09.348Z"
+    },
+    {
+      "id": "log_1790177705798_801",
+      "recipient": "154743494193290@lid",
+      "message": "Hello",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:35:05.798Z"
+    },
+    {
+      "id": "log_1790177053597_94",
+      "recipient": "status@broadcast",
+      "message": "Kerala DJ in Shikaripura",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:24:13.597Z"
+    },
+    {
+      "id": "log_1790176224991_629",
+      "recipient": "132259424251933@lid",
+      "message": "Yn madbeku",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:10:24.991Z"
+    },
+    {
+      "id": "log_1790176065980_495",
+      "recipient": "83184943407202@lid",
+      "message": "Okay , all best bro \nBut nowadays competition tumba jasti , I am also preparing for banking",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:07:45.980Z"
+    },
+    {
+      "id": "log_1790175938848_505",
+      "recipient": "132259424251933@lid",
+      "message": "Ynu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:05:38.848Z"
+    },
+    {
+      "id": "log_1790175936660_590",
+      "recipient": "83184943407202@lid",
+      "message": "Yav exam ge preparation",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:05:36.660Z"
+    },
+    {
+      "id": "log_1790175865308_209",
+      "recipient": "83184943407202@lid",
+      "message": "Eda around 9 to 7 eda 3 onboarding pending eda",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:04:25.308Z"
+    },
+    {
+      "id": "log_1790175786758_230",
+      "recipient": "83184943407202@lid",
+      "message": "Atleast 25",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:03:06.758Z"
+    },
+    {
+      "id": "log_1790175773976_299",
+      "recipient": "83184943407202@lid",
+      "message": "Huu around feb alli but sir enadru 30k kodthini andre I will stay if he say no then I will jump",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:53.976Z"
+    },
+    {
+      "id": "log_1790175760573_714",
+      "recipient": "29227353145358@lid",
+      "message": "Onde sari ninu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:40.573Z"
+    },
+    {
+      "id": "log_1790175755839_155",
+      "recipient": "29227353145358@lid",
+      "message": "Uta madi cl madu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:35.839Z"
+    },
+    {
+      "id": "log_1790175749105_272",
+      "recipient": "29227353145358@lid",
+      "message": "Hm",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:29.105Z"
+    },
+    {
+      "id": "log_1790175736786_962",
+      "recipient": "29227353145358@lid",
+      "message": "Yen aythu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:16.786Z"
+    },
+    {
+      "id": "log_1790175732576_399",
+      "recipient": "29227353145358@lid",
+      "message": "Helu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:02:12.576Z"
+    },
+    {
+      "id": "log_1790175707302_705",
+      "recipient": "83184943407202@lid",
+      "message": "18000",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:01:47.302Z"
+    },
+    {
+      "id": "log_1790175691522_679",
+      "recipient": "83184943407202@lid",
+      "message": "Okay fine 👌",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:01:31.522Z"
+    },
+    {
+      "id": "log_1790175661343_585",
+      "recipient": "83184943407202@lid",
+      "message": "If I get any freelancing project will u help",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:01:01.343Z"
+    },
+    {
+      "id": "log_1790175633152_755",
+      "recipient": "83184943407202@lid",
+      "message": "U only",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:00:33.152Z"
+    },
+    {
+      "id": "log_1790175621972_169",
+      "recipient": "83184943407202@lid",
+      "message": "Bro tumba tough eda competition",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T15:00:21.972Z"
+    },
+    {
+      "id": "log_1790175593283_183",
+      "recipient": "263011650519175@lid",
+      "message": "K",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:59:53.283Z"
+    },
+    {
+      "id": "log_1790175557329_270",
+      "recipient": "83184943407202@lid",
+      "message": "Which project are you working on now",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:59:17.329Z"
+    },
+    {
+      "id": "log_1790175493181_654",
+      "recipient": "83184943407202@lid",
+      "message": "Bro Nimdu what are u doing now",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:58:13.181Z"
+    },
+    {
+      "id": "log_1790175432443_545",
+      "recipient": "83184943407202@lid",
+      "message": "Bro app use maadthilla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:57:12.443Z"
+    },
+    {
+      "id": "log_1790175422439_65",
+      "recipient": "83184943407202@lid",
+      "message": "Haa bro",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:57:02.439Z"
+    },
+    {
+      "id": "log_1790175331641_22",
+      "recipient": "83184943407202@lid",
+      "message": "Avaiogroups.in",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:55:31.641Z"
+    },
+    {
+      "id": "log_1790175325240_889",
+      "recipient": "83184943407202@lid",
+      "message": "Office alli avaio innex project nadethaeda",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:55:25.240Z"
+    },
+    {
+      "id": "log_1790175236228_512",
+      "recipient": "83184943407202@lid",
+      "message": "Bro office alla, personal ge friend du ondu project sikide adike",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:53:56.228Z"
+    },
+    {
+      "id": "log_1790174897368_400",
+      "recipient": "83184943407202@lid",
+      "message": "For Something I will tell u later",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:48:17.368Z"
+    },
+    {
+      "id": "log_1790174834653_222",
+      "recipient": "29227353145358@lid",
+      "message": "Mess nalli idini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:47:14.653Z"
+    },
+    {
+      "id": "log_1790174827336_46",
+      "recipient": "29227353145358@lid",
+      "message": "Amele madthini",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:47:07.336Z"
+    },
+    {
+      "id": "log_1790174824340_758",
+      "recipient": "83184943407202@lid",
+      "message": "Chirag bro u were working on some ghee related websites did u hosted bro if hosted can u share me link I need a reference of it please 🙏",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:47:04.340Z"
+    },
+    {
+      "id": "log_1790174686866_412",
+      "recipient": "29227353145358@lid",
+      "message": "Helu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:44:46.866Z"
+    },
+    {
+      "id": "log_1790174287720_282",
+      "recipient": "29227353145358@lid",
+      "message": "Hm",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:38:07.720Z"
+    },
+    {
+      "id": "log_1790173991380_218",
+      "recipient": "154743494193290",
+      "message": "Hi there! 👋 Welcome to our business support on WhatsApp. How can we help you today?\n\n1. Product Catalog\n2. Pricing Details\n3. Talk to Support",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T14:33:11.380Z"
+    },
+    {
+      "id": "log_1790173989823_865",
+      "recipient": "154743494193290@lid",
+      "message": "Hello",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:33:09.823Z"
+    },
+    {
+      "id": "log_1790173971685_741",
+      "recipient": "154743494193290",
+      "message": "Our pricing plans start from $19/mo. Visit our website or reply with \"1\" to request a callback from sales!",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T14:32:51.685Z"
+    },
+    {
+      "id": "log_1790173968855_213",
+      "recipient": "154743494193290@lid",
+      "message": "Price",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:32:48.855Z"
+    },
+    {
+      "id": "log_1790173360148_986",
+      "recipient": "154743494193290@lid",
+      "message": "Hi there! 👋 Welcome to our business support on WhatsApp. How can we help you today?\n\n1. Product Catalog\n2. Pricing Details\n3. Talk to Support",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T14:22:40.148Z"
+    },
+    {
+      "id": "log_1790173357132_996",
+      "recipient": "154743494193290@lid",
+      "message": "Hello",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:22:37.132Z"
+    },
+    {
+      "id": "log_1790173285101_79",
+      "recipient": "154743494193290@lid",
+      "message": "Our pricing plans start from $19/mo. Visit our website or reply with \"1\" to request a callback from sales!",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T14:21:25.101Z"
+    },
+    {
+      "id": "log_1790173282241_366",
+      "recipient": "154743494193290@lid",
+      "message": "Price",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:21:22.241Z"
+    },
+    {
+      "id": "log_1790173013385_158",
+      "recipient": "120363167323789512@newsletter",
+      "message": "https://results.vtu.ac.in/indexMJ26.php\n\n> Results of B.E 1st to 8th Sem [2015 / 2017 / 2018 Scheme]",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T14:16:53.385Z"
+    },
+    {
+      "id": "log_1790171026899_994",
+      "recipient": "29227353145358@lid",
+      "message": "Yen aythu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T13:43:46.899Z"
+    },
+    {
+      "id": "log_1790171023699_788",
+      "recipient": "29227353145358@lid",
+      "message": "Yake",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T13:43:43.699Z"
+    },
+    {
+      "id": "log_1790170298060_151",
+      "recipient": "29227353145358@lid",
+      "message": "Helu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T13:31:38.060Z"
+    },
+    {
+      "id": "log_1790167569028_432",
+      "recipient": "6366189346",
+      "message": "hi Cha,\nwe are from We and You Marketing wenu",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:46:09.028Z"
+    },
+    {
+      "id": "log_1790167560528_809",
+      "recipient": "7204708625",
+      "message": "hi Bhuchi,\nwe are from We and You Marketing wenu",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:46:00.528Z"
+    },
+    {
+      "id": "log_1790167554977_108",
+      "recipient": "8310031349",
+      "message": "hi vjb,\nwe are from We and You Marketing wenu",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:45:54.977Z"
+    },
+    {
+      "id": "log_1790167546718_419",
+      "recipient": "8660013411",
+      "message": "hi CV,\nwe are from We and You Marketing wenu",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:45:46.718Z"
+    },
+    {
+      "id": "log_1790167448227_618",
+      "recipient": "8660013411",
+      "message": "hi CV,\nwe are from We and You Marketing wenu",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:44:08.227Z"
+    },
+    {
+      "id": "log_1790167092491_782",
+      "recipient": "8660013411",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:38:12.491Z"
+    },
+    {
+      "id": "log_1790166750076_968",
+      "recipient": "6366189346",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:32:30.076Z"
+    },
+    {
+      "id": "log_1790166744904_582",
+      "recipient": "7204708625",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:32:24.904Z"
+    },
+    {
+      "id": "log_1790166740704_946",
+      "recipient": "8310031349",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:32:20.704Z"
+    },
+    {
+      "id": "log_1790166736734_388",
+      "recipient": "8660013411",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:32:16.734Z"
+    },
+    {
+      "id": "log_1790165752426_817",
+      "recipient": "6366189346",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:15:52.426Z"
+    },
+    {
+      "id": "log_1790165747542_33",
+      "recipient": "7204708625",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:15:47.542Z"
+    },
+    {
+      "id": "log_1790165744362_111",
+      "recipient": "8310031349",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:15:44.362Z"
+    },
+    {
+      "id": "log_1790165740863_274",
+      "recipient": "8660013411",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:15:40.863Z"
+    },
+    {
+      "id": "log_1790165400342_80",
+      "recipient": "6366189346",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:10:00.342Z"
+    },
+    {
+      "id": "log_1790165390590_387",
+      "recipient": "7204708625",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:09:50.590Z"
+    },
+    {
+      "id": "log_1790165384266_767",
+      "recipient": "8310031349",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:09:44.266Z"
+    },
+    {
+      "id": "log_1790165376876_404",
+      "recipient": "8660013411",
+      "message": "hi name,\nwe are from We and You Marketing company\n",
+      "type": "broadcast",
+      "status": "sent",
+      "timestamp": "2026-09-23T12:09:36.876Z"
+    },
+    {
+      "id": "log_1790165167033_795",
+      "recipient": "28617585250476@lid",
+      "message": "K",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T12:06:07.033Z"
+    },
+    {
+      "id": "log_1790164685822_86",
+      "recipient": "918861490642",
+      "message": "Hi there! 👋 Welcome to our business support on WhatsApp. How can we help you today?\n\n1. Product Catalog\n2. Pricing Details\n3. Talk to Support",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T11:58:05.822Z"
+    },
+    {
+      "id": "log_1790164685002_912",
+      "recipient": "28617585250476@lid",
+      "message": "Hi there! 👋 Welcome to our business support on WhatsApp. How can we help you today?\n\n1. Product Catalog\n2. Pricing Details\n3. Talk to Support",
+      "type": "auto_reply",
+      "status": "sent",
+      "timestamp": "2026-09-23T11:58:05.002Z"
+    },
+    {
+      "id": "log_1790164682715_736",
+      "recipient": "28617585250476@lid",
+      "message": "Hello",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T11:58:02.715Z"
+    },
+    {
+      "id": "log_1790164682239_958",
+      "recipient": "918861490642",
+      "message": "Hello",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-09-23T11:58:02.239Z"
+    },
+    {
+      "id": "log_1790164667040_146",
+      "recipient": "918861490642",
+      "message": "hi",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-09-23T11:57:47.040Z"
+    },
+    {
+      "id": "log_1790164382564_356",
+      "recipient": "8861490642",
+      "message": "heloo",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-09-23T11:53:02.564Z"
+    }
+  ],
+  "email_settings": {
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "secure": true,
+    "user": "",
+    "pass": "",
+    "from_name": "My Business Support",
+    "from_email": ""
+  },
+  "email_campaigns": [],
+  "settings": {
+    "min_delay_ms": 3000,
+    "max_delay_ms": 7000,
+    "max_daily_messages": 11,
+    "out_of_office_enabled": false,
+    "out_of_office_message": "We are currently offline. Our business hours are Mon-Fri 9AM-6PM. We will reply first thing tomorrow!"
+  }
+}
