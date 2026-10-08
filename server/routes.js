@@ -1,9 +1,20 @@
 import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { db } from './db.js';
 import { waClient } from './whatsapp.js';
 import { campaignManager } from './campaignManager.js';
 import { emailManager } from './emailManager.js';
+import { birthdayManager } from './birthdayManager.js';
 import { formatMessageVariables } from './botEngine.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const uploadsDir = path.join(__dirname, '../data/uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+}
 
 export function createRouter(io) {
   const router = express.Router();
@@ -26,6 +37,33 @@ export function createRouter(io) {
     try {
       await waClient.initialize();
       res.json({ success: true, message: 'Reconnecting WhatsApp socket...' });
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  // --- Image Upload Endpoint ---
+  router.post('/upload-image', (req, res) => {
+    try {
+      const { imageBase64, filename } = req.body;
+      if (!imageBase64) return res.status(400).json({ error: 'imageBase64 field is required' });
+
+      const matches = imageBase64.match(/^data:image\/([a-zA-Z0-9]+);base64,(.+)$/);
+      let ext = 'jpg';
+      let data = imageBase64;
+
+      if (matches && matches.length === 3) {
+        ext = matches[1];
+        data = matches[2];
+      }
+
+      const safeFilename = `img_${Date.now()}_${Math.floor(Math.random()*1000)}.${ext}`;
+      const filePath = path.join(uploadsDir, safeFilename);
+
+      fs.writeFileSync(filePath, Buffer.from(data, 'base64'));
+      const publicUrl = `/uploads/${safeFilename}`;
+
+      res.json({ success: true, url: publicUrl, filename: safeFilename });
     } catch (err) {
       res.status(500).json({ error: err.message });
     }
@@ -124,13 +162,12 @@ export function createRouter(io) {
 
   // --- Send Direct Single Message ---
   router.post('/send-direct', async (req, res) => {
-    const { phone, message, name } = req.body;
+    const { phone, message, name, image } = req.body;
     if (!phone || !message) {
       return res.status(400).json({ error: 'Phone and message are required.' });
     }
 
     try {
-      // Clean phone number for lookup
       let cleanPhone = phone.replace(/\D/g, '');
       const settings = db.getSettings();
       const defaultCc = settings.default_country_code || '91';
@@ -138,7 +175,6 @@ export function createRouter(io) {
         cleanPhone = defaultCc + cleanPhone;
       }
 
-      // Lookup contact from DB using last 10 digits
       const last10 = cleanPhone.slice(-10);
       const existingContact = db.getContacts().find(c => {
         const cPhone = c.phone.replace(/\D/g, '');
@@ -151,10 +187,14 @@ export function createRouter(io) {
         company: existingContact ? existingContact.company : ''
       };
 
-      // Replace {name}, {company}, and Spintax
       const formattedText = formatMessageVariables(message, contactObj);
 
-      await waClient.sendMessage(cleanPhone, formattedText);
+      if (image && image.trim()) {
+        await waClient.sendImageMessage(cleanPhone, image.trim(), formattedText);
+      } else {
+        await waClient.sendMessage(cleanPhone, formattedText);
+      }
+
       db.addLog({
         recipient: cleanPhone,
         message: formattedText,
@@ -164,6 +204,43 @@ export function createRouter(io) {
       res.json({ success: true, message: 'Message sent successfully.', sentText: formattedText });
     } catch (err) {
       res.status(500).json({ error: err.message });
+    }
+  });
+
+  // --- Birthday Automation Endpoints ---
+  router.get('/birthday/settings', (req, res) => {
+    res.json(db.getBirthdaySettings());
+  });
+
+  router.post('/birthday/settings', (req, res) => {
+    const updated = db.updateBirthdaySettings(req.body);
+    res.json(updated);
+  });
+
+  router.get('/birthday/today', (req, res) => {
+    res.json(birthdayManager.getTodayBirthdays());
+  });
+
+  router.get('/birthday/upcoming', (req, res) => {
+    const days = parseInt(req.query.days || '7', 10);
+    res.json(birthdayManager.getUpcomingBirthdays(days));
+  });
+
+  router.post('/birthday/trigger', async (req, res) => {
+    try {
+      await birthdayManager.checkAndSendBirthdayWishes();
+      res.json({ success: true, message: 'Birthday scan and wish delivery completed.' });
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  router.post('/birthday/send/:id', async (req, res) => {
+    try {
+      const result = await birthdayManager.sendWishToContact(req.params.id);
+      res.json(result);
+    } catch (err) {
+      res.status(400).json({ error: err.message });
     }
   });
 
