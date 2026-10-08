@@ -7,8 +7,9 @@ class CampaignManager {
     this.activeCampaigns = new Map(); // campaignId -> status flag
   }
 
-  async startCampaign(campaignId, io) {
-    const campaigns = db.getCampaigns();
+  async startCampaign(tenantId, campaignId, io) {
+    const tId = tenantId || 'tenant_default';
+    const campaigns = db.getCampaigns(tId);
     const campaign = campaigns.find(c => c.id === campaignId);
 
     if (!campaign) {
@@ -20,28 +21,29 @@ class CampaignManager {
     }
 
     this.activeCampaigns.set(campaignId, true);
-    db.updateCampaignStatus(campaignId, 'running');
+    db.updateCampaignStatus(tId, campaignId, 'running');
 
     if (io) {
       io.emit('campaign_update', { id: campaignId, status: 'running' });
     }
 
     // Process campaign in async background runner
-    this.processCampaignQueue(campaign, io);
+    this.processCampaignQueue(tId, campaign, io);
 
     return { status: 'running', message: 'Campaign broadcast started successfully.' };
   }
 
-  pauseCampaign(campaignId, io) {
+  pauseCampaign(tenantId, campaignId, io) {
+    const tId = tenantId || 'tenant_default';
     this.activeCampaigns.set(campaignId, false);
-    db.updateCampaignStatus(campaignId, 'paused');
+    db.updateCampaignStatus(tId, campaignId, 'paused');
     if (io) {
       io.emit('campaign_update', { id: campaignId, status: 'paused' });
     }
     return { status: 'paused' };
   }
 
-  async processCampaignQueue(campaign, io) {
+  async processCampaignQueue(tId, campaign, io) {
     const contacts = campaign.contacts || [];
     let sentCount = campaign.sent_count || 0;
     let failedCount = campaign.failed_count || 0;
@@ -49,12 +51,9 @@ class CampaignManager {
     const minDelay = campaign.delay_min || 3000;
     const maxDelay = campaign.delay_max || 7000;
 
-    console.log(`🚀 Campaign [${campaign.title}] started processing for ${contacts.length} recipients...`);
-
     for (let i = sentCount + failedCount; i < contacts.length; i++) {
       // Check if paused or stopped
       if (this.activeCampaigns.get(campaign.id) === false) {
-        console.log(`⏸️ Campaign [${campaign.title}] paused by user at contact index ${i}`);
         break;
       }
 
@@ -65,28 +64,24 @@ class CampaignManager {
         await waClient.sendMessage(contact.phone, messageText);
         sentCount++;
 
-        db.addLog({
+        db.addLog(tId, {
           recipient: contact.phone,
           message: messageText,
           type: 'broadcast',
           status: 'sent'
         });
-
-        console.log(`✅ [${sentCount}/${contacts.length}] Broadcast sent to ${contact.name} (${contact.phone})`);
       } catch (err) {
         failedCount++;
 
-        db.addLog({
+        db.addLog(tId, {
           recipient: contact.phone,
           message: messageText,
           type: 'broadcast',
           status: 'failed'
         });
-
-        console.error(`❌ Broadcast failed for ${contact.phone}:`, err.message);
       }
 
-      db.updateCampaignStatus(campaign.id, 'running', sentCount, failedCount);
+      db.updateCampaignStatus(tId, campaign.id, 'running', sentCount, failedCount);
 
       if (io) {
         io.emit('campaign_progress', {
@@ -104,12 +99,11 @@ class CampaignManager {
     }
 
     if (sentCount + failedCount >= contacts.length) {
-      db.updateCampaignStatus(campaign.id, 'completed', sentCount, failedCount);
+      db.updateCampaignStatus(tId, campaign.id, 'completed', sentCount, failedCount);
       this.activeCampaigns.delete(campaign.id);
       if (io) {
         io.emit('campaign_update', { id: campaign.id, status: 'completed' });
       }
-      console.log(`🎉 Campaign [${campaign.title}] Completed! Sent: ${sentCount}, Failed: ${failedCount}`);
     }
   }
 }

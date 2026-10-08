@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production builds
+client/dist/
+dist/
+
+# Session & Credentials Data (IMPORTANT SECURITY)
+.wa_session/
+data/
+*.db
+data/*.json
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+!.env.example
+
+# Logs & Temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+

@@ -30,53 +30,52 @@ class EmailManager {
     });
   }
 
-  async startEmailCampaign(campaignId, io) {
-    const campaigns = db.getEmailCampaigns();
+  async startEmailCampaign(tenantId, campaignId, io) {
+    const tId = tenantId || 'tenant_default';
+    const campaigns = db.getEmailCampaigns(tId);
     const campaign = campaigns.find(c => c.id === campaignId);
 
     if (!campaign) {
       throw new Error('Email campaign not found.');
     }
 
-    const settings = db.getEmailSettings();
+    const settings = db.getEmailSettings(tId);
     if (!settings.host || !settings.user || !settings.pass) {
       throw new Error('SMTP connection is not configured. Please save SMTP settings first.');
     }
 
     this.activeEmailCampaigns.set(campaignId, true);
-    db.updateEmailCampaignStatus(campaignId, 'running');
+    db.updateEmailCampaignStatus(tId, campaignId, 'running');
 
     if (io) {
       io.emit('email_campaign_update', { id: campaignId, status: 'running' });
     }
 
     // Run queue in background
-    this.processEmailQueue(campaign, settings, io);
+    this.processEmailQueue(tId, campaign, settings, io);
 
     return { status: 'running', message: 'Email campaign broadcast started.' };
   }
 
-  pauseEmailCampaign(campaignId, io) {
+  pauseEmailCampaign(tenantId, campaignId, io) {
+    const tId = tenantId || 'tenant_default';
     this.activeEmailCampaigns.set(campaignId, false);
-    db.updateEmailCampaignStatus(campaignId, 'paused');
+    db.updateEmailCampaignStatus(tId, campaignId, 'paused');
     if (io) {
       io.emit('email_campaign_update', { id: campaignId, status: 'paused' });
     }
     return { status: 'paused' };
   }
 
-  async processEmailQueue(campaign, settings, io) {
+  async processEmailQueue(tId, campaign, settings, io) {
     const contacts = campaign.contacts || [];
     let sentCount = campaign.sent_count || 0;
     let failedCount = campaign.failed_count || 0;
     const delayMs = campaign.delay_ms || 2000;
 
-    console.log(`📧 Email Campaign [${campaign.title}] started processing for ${contacts.length} recipients...`);
-
     for (let i = sentCount + failedCount; i < contacts.length; i++) {
       // Check if campaign was paused
       if (this.activeEmailCampaigns.get(campaign.id) === false) {
-        console.log(`⏸️ Email Campaign [${campaign.title}] paused at contact index ${i}`);
         break;
       }
 
@@ -84,9 +83,8 @@ class EmailManager {
       const targetEmail = contact.email ? contact.email.trim() : '';
 
       if (!targetEmail || !targetEmail.includes('@')) {
-        console.log(`⚠️ Skipping contact ${contact.name}: No valid email address.`);
         failedCount++;
-        db.updateEmailCampaignStatus(campaign.id, 'running', sentCount, failedCount);
+        db.updateEmailCampaignStatus(tId, campaign.id, 'running', sentCount, failedCount);
         continue;
       }
 
@@ -109,27 +107,23 @@ class EmailManager {
         });
 
         sentCount++;
-        db.addLog({
+        db.addLog(tId, {
           recipient: targetEmail,
           message: `Subject: ${formattedSubject}`,
           type: 'email_broadcast',
           status: 'sent'
         });
-
-        console.log(`✅ [${sentCount}/${contacts.length}] Email sent to ${contact.name} (${targetEmail})`);
       } catch (err) {
         failedCount++;
-        db.addLog({
+        db.addLog(tId, {
           recipient: targetEmail,
           message: `Subject: ${formattedSubject} | Error: ${err.message}`,
           type: 'email_broadcast',
           status: 'failed'
         });
-
-        console.error(`❌ Email failed for ${targetEmail}:`, err.message);
       }
 
-      db.updateEmailCampaignStatus(campaign.id, 'running', sentCount, failedCount);
+      db.updateEmailCampaignStatus(tId, campaign.id, 'running', sentCount, failedCount);
 
       if (io) {
         io.emit('email_campaign_progress', {
@@ -148,12 +142,11 @@ class EmailManager {
     }
 
     if (sentCount + failedCount >= contacts.length) {
-      db.updateEmailCampaignStatus(campaign.id, 'completed', sentCount, failedCount);
+      db.updateEmailCampaignStatus(tId, campaign.id, 'completed', sentCount, failedCount);
       this.activeEmailCampaigns.delete(campaign.id);
       if (io) {
         io.emit('email_campaign_update', { id: campaign.id, status: 'completed' });
       }
-      console.log(`🎉 Email Campaign [${campaign.title}] Completed! Sent: ${sentCount}, Failed: ${failedCount}`);
     }
   }
 }

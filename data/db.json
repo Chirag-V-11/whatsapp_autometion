@@ -1,4 +1,17 @@
 {
+  "tenants": [
+    {
+      "id": "tenant_default",
+      "email": "admin@automation.com",
+      "passwordHash": "31d77be40cfa6dcf7c0bdb7c16d9b2a2:7ff1cdb2d66d7396ccfdc0fe0873d544b82e2e8d3972b438e66e4738393356a6a57ea6374fa9cf0f2e1176889800fd2f68e70354718103a1442ff23d2bf7f919",
+      "companyName": "We&You Business Suite",
+      "plan": "Enterprise",
+      "maxContacts": 10000,
+      "role": "admin",
+      "isActive": true,
+      "created_at": "2026-10-03T07:58:16.191Z"
+    }
+  ],
   "contacts": [
     {
       "id": "1790164552563",
@@ -35,6 +48,19 @@
       "email": "",
       "tags": "VIP",
       "created_at": "2026-09-23T12:08:17.586Z"
+    },
+    {
+      "id": "1791005214561",
+      "phone": "918660013411",
+      "name": "VIP Friend",
+      "company": "We&You",
+      "email": "",
+      "tags": "General",
+      "dob": "2000-10-03",
+      "image": "/uploads/person_8660013411.jpg",
+      "custom_wish": "🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "last_wished_year": 2026,
+      "created_at": "2026-10-03T05:26:54.561Z"
     }
   ],
   "campaigns": [
@@ -320,6 +346,510 @@
     }
   ],
   "logs": [
+    {
+      "id": "log_1791014120689_705",
+      "recipient": "29227353145358@lid",
+      "message": "Nodbeku anodh illva",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:55:20.689Z"
+    },
+    {
+      "id": "log_1791014120423_914",
+      "recipient": "29227353145358@lid",
+      "message": "Insta story",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:55:20.423Z"
+    },
+    {
+      "id": "log_1791012987063_858",
+      "recipient": "29227353145358@lid",
+      "message": "Malgillva",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:36:27.063Z"
+    },
+    {
+      "id": "log_1791012978273_763",
+      "recipient": "29227353145358@lid",
+      "message": "Gothilla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:36:18.273Z"
+    },
+    {
+      "id": "log_1791012785773_17",
+      "recipient": "29227353145358@lid",
+      "message": "Chir",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:33:05.773Z"
+    },
+    {
+      "id": "log_1791012783033_224",
+      "recipient": "29227353145358@lid",
+      "message": "One day arunachalam devadthanke ogbayodha??",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:33:03.033Z"
+    },
+    {
+      "id": "log_1791012695283_294",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T07:31:35.283Z"
+    },
+    {
+      "id": "log_1791011602408_80",
+      "recipient": "29227353145358@lid",
+      "message": "Hmm",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T07:13:22.408Z"
+    },
+    {
+      "id": "log_1791010134081_707",
+      "recipient": "29227353145358@lid",
+      "message": "Ogthara",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:48:54.081Z"
+    },
+    {
+      "id": "log_1791010130531_597",
+      "recipient": "29227353145358@lid",
+      "message": "Sim simply",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:48:50.531Z"
+    },
+    {
+      "id": "log_1791010124914_612",
+      "recipient": "29227353145358@lid",
+      "message": "Y",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:48:44.914Z"
+    },
+    {
+      "id": "log_1791009737038_753",
+      "recipient": "29227353145358@lid",
+      "message": "Ok anstha ide",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:42:17.038Z"
+    },
+    {
+      "id": "log_1791009730577_775",
+      "recipient": "29227353145358@lid",
+      "message": "Mouth ulcer",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:42:10.577Z"
+    },
+    {
+      "id": "log_1791009725727_411",
+      "recipient": "29227353145358@lid",
+      "message": "I feeling better today",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:42:05.727Z"
+    },
+    {
+      "id": "log_1791009655490_397",
+      "recipient": "29227353145358@lid",
+      "message": "Estothige",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:40:55.490Z"
+    },
+    {
+      "id": "log_1791009643799_657",
+      "recipient": "29227353145358@lid",
+      "message": "Ogillva",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:40:43.799Z"
+    },
+    {
+      "id": "log_1791009628926_465",
+      "recipient": "29227353145358@lid",
+      "message": "Obane irodha",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:40:28.926Z"
+    },
+    {
+      "id": "log_1791009618681_872",
+      "recipient": "29227353145358@lid",
+      "message": "Thinking 🤔",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:40:18.681Z"
+    },
+    {
+      "id": "log_1791009610402_157",
+      "recipient": "29227353145358@lid",
+      "message": "Thing",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:40:10.402Z"
+    },
+    {
+      "id": "log_1791009591553_659",
+      "recipient": "29227353145358@lid",
+      "message": "?",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:39:51.553Z"
+    },
+    {
+      "id": "log_1791009568512_481",
+      "recipient": "29227353145358@lid",
+      "message": "Athava munche kodsidh beka",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:39:28.512Z"
+    },
+    {
+      "id": "log_1791009559488_299",
+      "recipient": "29227353145358@lid",
+      "message": "Ide irla",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:39:19.488Z"
+    },
+    {
+      "id": "log_1791009533190_431",
+      "recipient": "29227353145358@lid",
+      "message": "Id chang illva",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:38:53.190Z"
+    },
+    {
+      "id": "log_1791009136409_397",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:32:16.409Z"
+    },
+    {
+      "id": "log_1791009076603_358",
+      "recipient": "29227353145358@lid",
+      "message": "Nan fruits thinoke keldhe",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:31:16.603Z"
+    },
+    {
+      "id": "log_1791008910369_400",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:28:30.369Z"
+    },
+    {
+      "id": "log_1791008884361_561",
+      "recipient": "29227353145358@lid",
+      "message": "Beda",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:28:04.361Z"
+    },
+    {
+      "id": "log_1791008850503_149",
+      "recipient": "29227353145358@lid",
+      "message": "Sumane",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:27:30.503Z"
+    },
+    {
+      "id": "log_1791008847878_792",
+      "recipient": "29227353145358@lid",
+      "message": "Hakbeda",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:27:27.878Z"
+    },
+    {
+      "id": "log_1791008753533_930",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:25:53.533Z"
+    },
+    {
+      "id": "log_1791008317649_390",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:18:37.649Z"
+    },
+    {
+      "id": "log_1791008104624_343",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:15:04.624Z"
+    },
+    {
+      "id": "log_1791008066345_638",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:14:26.345Z"
+    },
+    {
+      "id": "log_1791008060824_891",
+      "recipient": "29227353145358@lid",
+      "message": "Hu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:14:20.824Z"
+    },
+    {
+      "id": "log_1791008047845_329",
+      "recipient": "29227353145358@lid",
+      "message": "Idu small aguthe antha",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:14:07.845Z"
+    },
+    {
+      "id": "log_1791008028912_94",
+      "recipient": "29227353145358@lid",
+      "message": "Wt happened to this",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:13:48.912Z"
+    },
+    {
+      "id": "log_1791007997860_889",
+      "recipient": "29227353145358@lid",
+      "message": "Select one",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T06:13:17.860Z"
+    },
+    {
+      "id": "log_1791007660214_781",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:07:40.214Z"
+    },
+    {
+      "id": "log_1791007526380_861",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:05:26.380Z"
+    },
+    {
+      "id": "log_1791007525497_815",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:05:25.497Z"
+    },
+    {
+      "id": "log_1791007489732_735",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T06:04:49.732Z"
+    },
+    {
+      "id": "log_1791007033763_125",
+      "recipient": "29227353145358@lid",
+      "message": "Eeee",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:57:13.763Z"
+    },
+    {
+      "id": "log_1791006985547_692",
+      "recipient": "29227353145358@lid",
+      "message": "Chang idiya illva antha",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:25.547Z"
+    },
+    {
+      "id": "log_1791006976370_493",
+      "recipient": "29227353145358@lid",
+      "message": "Nodu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:16.370Z"
+    },
+    {
+      "id": "log_1791006975073_393",
+      "recipient": "29227353145358@lid",
+      "message": "Kalsuve",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:15.073Z"
+    },
+    {
+      "id": "log_1791006969285_753",
+      "recipient": "29227353145358@lid",
+      "message": "Silver bracelet",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:09.285Z"
+    },
+    {
+      "id": "log_1791006961139_696",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:01.139Z"
+    },
+    {
+      "id": "log_1791006960218_216",
+      "recipient": "29227353145358@lid",
+      "message": "Hloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:56:00.218Z"
+    },
+    {
+      "id": "log_1791005840215_86",
+      "recipient": "29227353145358@lid",
+      "message": "Ok cl u later",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:37:20.215Z"
+    },
+    {
+      "id": "log_1791005831368_63",
+      "recipient": "29227353145358@lid",
+      "message": "Idiya",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:37:11.368Z"
+    },
+    {
+      "id": "log_1791005829689_948",
+      "recipient": "29227353145358@lid",
+      "message": "Obane",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:37:09.689Z"
+    },
+    {
+      "id": "log_1791005820245_813",
+      "recipient": "29227353145358@lid",
+      "message": "Bartha idiya",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:37:00.245Z"
+    },
+    {
+      "id": "log_1791005816074_147",
+      "recipient": "29227353145358@lid",
+      "message": "Blur",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:56.074Z"
+    },
+    {
+      "id": "log_1791005795520_76",
+      "recipient": "29227353145358@lid",
+      "message": "😂😂😂",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:35.520Z"
+    },
+    {
+      "id": "log_1791005791004_782",
+      "recipient": "29227353145358@lid",
+      "message": "Nalli",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:31.004Z"
+    },
+    {
+      "id": "log_1791005789740_259",
+      "recipient": "29227353145358@lid",
+      "message": "Face",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:29.740Z"
+    },
+    {
+      "id": "log_1791005778472_717",
+      "recipient": "29227353145358@lid",
+      "message": "Situu",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:18.472Z"
+    },
+    {
+      "id": "log_1791005771540_110",
+      "recipient": "29227353145358@lid",
+      "message": "Wt happened",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:11.540Z"
+    },
+    {
+      "id": "log_1791005767393_491",
+      "recipient": "29227353145358@lid",
+      "message": "Y",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:36:07.393Z"
+    },
+    {
+      "id": "log_1791005724302_332",
+      "recipient": "29227353145358@lid",
+      "message": "Two min",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:35:24.302Z"
+    },
+    {
+      "id": "log_1791005721567_925",
+      "recipient": "29227353145358@lid",
+      "message": "Vc",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:35:21.567Z"
+    },
+    {
+      "id": "log_1791005700561_620",
+      "recipient": "29227353145358@lid",
+      "message": "https://youtube.com/shorts/KXbFrndoA2o?si=5BtJ18g0QrSOUdks",
+      "type": "incoming",
+      "status": "received",
+      "timestamp": "2026-10-03T05:35:00.561Z"
+    },
+    {
+      "id": "log_1791005566572_815",
+      "recipient": "918660013411",
+      "message": "🎂 Birthday Wish Sent: 🎉 Happy Birthday! 🎂 Wishing you a wonderful day filled with joy, happiness, and great success! 🥳✨",
+      "type": "outgoing",
+      "status": "sent",
+      "timestamp": "2026-10-03T05:32:46.572Z"
+    },
     {
       "id": "log_1790356440853_197",
       "recipient": "29227353145358@lid",
@@ -1424,14 +1954,81 @@
     "user": "",
     "pass": "",
     "from_name": "My Business Support",
-    "from_email": ""
+    "from_email": "",
+    "tenant_default": {
+      "host": "smtp.gmail.com",
+      "port": 465,
+      "secure": true,
+      "user": "",
+      "pass": "",
+      "from_name": "My Business",
+      "from_email": ""
+    },
+    "[object Object]": {
+      "host": "smtp.gmail.com",
+      "port": 465,
+      "secure": true,
+      "user": "",
+      "pass": "",
+      "from_name": "My Business",
+      "from_email": ""
+    }
   },
   "email_campaigns": [],
+  "birthday_settings": {
+    "enabled": true,
+    "send_time": "09:00",
+    "default_template": "🎉 Happy Birthday {name}! 🎂 Wishing you a wonderful day filled with happiness, health, and great success! 🥳✨",
+    "send_whatsapp": true,
+    "send_email": false,
+    "tenant_default": {
+      "enabled": true,
+      "send_time": "09:00",
+      "default_template": "🎉 Happy Birthday {name}! 🎂 Wishing you a wonderful day! 🥳✨",
+      "send_whatsapp": true,
+      "send_email": true
+    },
+    "[object Object]": {
+      "enabled": true,
+      "send_time": "09:00",
+      "default_template": "🎉 Happy Birthday {name}! 🎂 Wishing you a wonderful day! 🥳✨",
+      "send_whatsapp": true,
+      "send_email": true
+    }
+  },
+  "branding": {
+    "tenant_default": {
+      "app_name": "SaaS WhatsApp Suite",
+      "company_name": "We&You Automation",
+      "logo_url": "",
+      "primary_color": "#25D366"
+    },
+    "[object Object]": {
+      "app_name": "SaaS WhatsApp Suite",
+      "company_name": "We&You Automation",
+      "logo_url": "",
+      "primary_color": "#25D366"
+    }
+  },
   "settings": {
     "min_delay_ms": 3000,
     "max_delay_ms": 7000,
     "max_daily_messages": 11,
     "out_of_office_enabled": false,
-    "out_of_office_message": "We are currently offline. Our business hours are Mon-Fri 9AM-6PM. We will reply first thing tomorrow!"
+    "out_of_office_message": "We are currently offline. Our business hours are Mon-Fri 9AM-6PM. We will reply first thing tomorrow!",
+    "tenant_default": {
+      "min_delay_ms": 3000,
+      "max_delay_ms": 7000,
+      "max_daily_messages": 500,
+      "out_of_office_enabled": false,
+      "out_of_office_message": "We are currently offline."
+    },
+    "[object Object]": {
+      "min_delay_ms": 3000,
+      "max_delay_ms": 7000,
+      "max_daily_messages": 500,
+      "out_of_office_enabled": false,
+      "out_of_office_message": "We are currently offline."
+    }
   }
 }
